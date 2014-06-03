@@ -102,11 +102,11 @@ public class TidyISBNValidateTest {
                         "", "0", "01", "0123", "01234", "012345", "0123456", "01234567",
                         "012345678",
                         // skipping length 10
-                        "0123456789A", "0123456789AB",
+                        "01234567890", "012345678901",
                         // skipping length 13
-                        "0123456789ABCD",
-                        "0123456789ABCDE",
-                        "0123456789ABCDEFFFFFFFFFFFFFFFFFFF", // one that's long
+                        "01234567890123",
+                        "012345678901234",
+                        "0123456789999999999999999999999999", // one that's long
                     }) {{
         description = "Strings of the wrong length.";
       }},
@@ -123,7 +123,6 @@ public class TidyISBNValidateTest {
                         "0123456---",
                         "01234567--",
                         "012345678-",
-                        "0123456789",
                         // length 13 strings
                         "0------------",
                         "01-----------",
@@ -134,10 +133,10 @@ public class TidyISBNValidateTest {
                         "0123456------",
                         "01234567-----",
                         "012345678----",
-                        "0123456789---",
-                        "0123456789A--",
-                        "0123456789AB-",
-                        "0123456789ABC",
+                        // skip length 10
+                        "01234567890--",
+                        "012345678901-",
+                        "0123456789012",
                     }) {{
         description = "Strings of wrong length when removing dashes.";
       }},
