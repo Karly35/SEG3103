@@ -198,8 +198,8 @@ public class TidyISBNValidateTest {
                         "0-bf-020652-3",
                         "9971-o-0210-0",
                         "99921-++-10-7",
-                        "0-����������-2957-X",
-                        "0-$%$����������-0-X",
+                        "0-µ∑ƒ√-2957-X",
+                        "0-$%$∂ƒ∂å-0-X",
                     }) {{
         description = "Only digits can form a publisher group.";
       }},
