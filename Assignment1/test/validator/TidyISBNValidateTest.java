@@ -6,6 +6,11 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Tests for SEG3103 Assignment 1, Question 2.3
+ * @author Samira El-Rayyes 6439366
+ * @author Antoine Grondin 6276497
+ */
 public class TidyISBNValidateTest {
 
   private static final HashMap<String, String> ValidISBN13Dashes =
@@ -193,8 +198,8 @@ public class TidyISBNValidateTest {
                         "0-bf-020652-3",
                         "9971-o-0210-0",
                         "99921-++-10-7",
-                        "0-µ∑ƒ√-2957-X",
-                        "0-$%$∂ƒ∂å-0-X",
+                        "0-����������-2957-X",
+                        "0-$%$����������-0-X",
                     }) {{
         description = "Only digits can form a publisher group.";
       }},
